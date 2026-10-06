@@ -17,7 +17,7 @@ body{background:var(--ink);color:var(--fg);font:17px/1.6 "Space Grotesk",system-
 a{color:var(--honey)}
 /* her face: breathing, flowing, glowing */
 .vision{position:fixed;inset:-4%;z-index:0;overflow:hidden}
-.vision img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:url(#warp) saturate(1.15) brightness(.95);animation:breathe 9s ease-in-out infinite;transform-origin:50% 40%}
+.vision img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;filter:url(#warp) saturate(1.15) brightness(.95);animation:breathe 9s ease-in-out infinite;transform-origin:50% 40%}
 @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
 .glow{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(40% 35% at 50% 32%,rgba(255,170,90,.3),transparent 70%);mix-blend-mode:screen;animation:pulse 9s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.35}}
@@ -70,7 +70,7 @@ form:focus-within{border-color:var(--amber)}
     <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
-<div class="vision" aria-hidden="true"><img src="https://drasticstatic.github.io/alexandrina-public-preview/assets/oracle.webp" alt=""></div>
+<div class="vision" aria-hidden="true"><img src="https://drasticstatic.github.io/alexandrina-public-preview/assets/oracle.webp?v=2" alt=""></div>
 <div class="glow" aria-hidden="true"></div><div class="veil" aria-hidden="true"></div>
 <canvas id="sparks" aria-hidden="true"></canvas>
 <div class="curtain l" aria-hidden="true"></div><div class="curtain r" aria-hidden="true"></div>
