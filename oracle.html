@@ -146,9 +146,10 @@ function answer(q){q=(q||'').toLowerCase();var w=q.split(/[^a-z0-9]+/).filter(fu
 function dissolve(input){if(reduce)return;var r=input.getBoundingClientRect(),text=input.value.slice(0,60);
   for(var i=0;i<text.length;i++){var s=document.createElement('span');s.className='letter';s.textContent=text[i];s.style.left=(r.left+16+i*9)+'px';s.style.top=(r.top+r.height/2-10)+'px';
     s.style.setProperty('--dx',((Math.random()-.5)*120)+'px');s.style.animationDelay=(i*12)+'ms';document.body.appendChild(s);setTimeout(s.remove.bind(s),1800+i*12)}}
-document.getElementById('ask').addEventListener('submit',function(e){e.preventDefault();var q=document.getElementById('q');dissolve(q);var v=q.value;q.value='';answer(v)});
+var intro;
+document.getElementById('ask').addEventListener('submit',function(e){e.preventDefault();clearTimeout(intro);var q=document.getElementById('q');dissolve(q);var v=q.value;q.value='';answer(v)});
 /* a lost visitor gets a guess from the address they tried */
-setTimeout(function(){
+intro=setTimeout(function(){
   if(visit){var tried='';try{tried=decodeURIComponent(location.pathname.split('/').filter(Boolean).pop()||'')}catch(e){}answer(tried.replace(/\.html?$/,'').replace(/[-_]/g,' '))}
   else say('Ask me where you meant to go, and I\'ll light the way.');
 },reduce?0:1700);
