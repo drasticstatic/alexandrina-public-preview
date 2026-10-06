@@ -8,4 +8,6 @@
 
 🔒 The engine source (`drasticstatic/alexandrina`) is private for now; this repo is its public window.
 
-🧪 **PIR portal redesign preview:** [`pir-portal/`](https://drasticstatic.github.io/alexandrina-public-preview/pir-portal/), a proposed redesign of A.L.E.X.'s portal, to be ported into `alex-desk` once approved.
+✅ **PIR portal redesign:** Cosmos's preview (`pir-portal/`) is now ported into the live [A.L.E.X. portal](https://psychedelicsinrecovery.github.io/alex-desk-public/); `pir-portal/` simply points there.
+
+🔥 **This page** has its own ember look, distinct from PIR's violet: the engine's window, not a tenant's.

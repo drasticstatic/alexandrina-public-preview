@@ -1,54 +1,246 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alexandrina · A.L.E.X.A.N.D.R.I.N.A. engine preview</title>
-<meta name="description" content="Astral Logic Endpoint eXpander: Automated Neural Distributed Resource Inferring Nexus Architecture — a cited Q&A + helpdesk engine.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap">
-<script>try{var t=localStorage.getItem('pir-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'dark'}catch(e){}</script>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alexandrina · the engine behind A.L.E.X.</title>
+<meta name="description" content="Alexandrina: a small, careful, multi-tenant knowledge engine. Sourced answers from a community's own materials, safety before AI, and helpdesks that never lose a request.">
+<meta name="theme-color" content="#0d0a08">
+<meta property="og:title" content="Alexandrina · the engine behind A.L.E.X.">
+<meta property="og:description" content="Sourced answers, safety before AI, and helpdesks that never lose a request. PIR® is the flagship community.">
+<meta property="og:image" content="https://psychedelicsinrecovery.github.io/alex-desk-public/assets/alex-social.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop offset='0' stop-color='%23ffd08a'/%3E%3Cstop offset='.55' stop-color='%23ff6b1a'/%3E%3Cstop offset='1' stop-color='%23b8320a'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Cpath d='M32 14 46 50H39l-3-9H28l-3 9h-7z M30 35h4l-2-7z' fill='%230d0a08'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<script>try{var t=localStorage.getItem('alexandrina-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
 <style>
-:root{--bg:#0d0b16;--panel:#16122a;--fg:#ece8f7;--muted:#a59fc0;--accent:#b48cff;--accent2:#5ee6c4;--border:#2a2445}
-[data-theme=light]{--bg:#f5f3fa;--panel:#fff;--fg:#1d1830;--muted:#5d5878;--accent:#6b3fd1;--accent2:#0f8f72;--border:#e2dcf0}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-a{color:var(--accent)}header{padding:2.2rem 1.25rem 1rem;text-align:center}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.25}h1{font-size:2.2rem;margin:.2rem 0}
-.eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:var(--muted)}
-.tag{color:var(--muted);margin:.2rem auto 1rem;max-width:42rem}
-nav{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
-.btn{display:inline-flex;gap:.4rem;align-items:center;padding:.55rem .9rem;border-radius:999px;border:1px solid var(--border);color:var(--fg);text-decoration:none;background:var(--panel);font-size:.92rem}
-.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
-main{max-width:860px;margin:0 auto;padding:0 1.25rem 6rem}
-.card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:1.2rem 1.4rem;margin:1rem 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem}
-.poem{font-family:Fraunces,Georgia,serif;font-style:italic;line-height:1.8;text-align:center;color:var(--fg)}
-table{border-collapse:collapse;width:100%;font-size:.93rem}td,th{border:1px solid var(--border);padding:.45rem .6rem;text-align:left;vertical-align:top}
-blockquote{border-left:3px solid var(--accent);margin:1rem 0;padding:.2rem 1rem;color:var(--muted)}
-code{background:color-mix(in srgb,var(--accent) 14%,transparent);padding:.05rem .35rem;border-radius:6px}
-footer{position:fixed;bottom:0;left:0;right:0;padding:.6rem 1rem;text-align:center;font-size:.8rem;color:var(--muted);background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--border)}
-footer a{color:var(--muted);margin:0 .5rem}
-</style></head><body>
-<header><div class="eyebrow">drasticstatic · public preview</div><h1>🌌 Alexandrina</h1>
-<p class="tag"><b>A.L.E.X.A.N.D.R.I.N.A.</b> = <b>A</b>stral <b>L</b>ogic <b>E</b>ndpoint e<b>X</b>pander: <b>A</b>utomated <b>N</b>eural <b>D</b>istributed <b>R</b>esource <b>I</b>nferring <b>N</b>exus <b>A</b>rchitecture</p>
-<nav><a class="btn primary" href="https://psychedelicsinrecovery.github.io/alex-desk-public/">🏳️ Meet A.L.E.X. at PIR®</a>
-<a class="btn" href="https://psychedelicsinrecovery.github.io/changelog-astro-public/library/how-alex-works">📚 How it works</a>
-<a class="btn" href="https://github.com/drasticstatic">🐙 drasticstatic</a>
-<a class="btn" href="#" onclick="var d=document.documentElement;d.dataset.theme=d.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('pir-theme',d.dataset.theme)}catch(e){};return false">🌗</a></nav></header>
-<main>
-<div class="card"><h2>🧠 What it is</h2>
-<p>A general-purpose, cloud-native knowledge engine. Communities and projects become <b>tenants</b>:
-point it at your own materials, and members get <b>sourced answers</b> plus <b>helpdesks</b> that turn
-requests into private Discord threads and GitHub Issues and Discussions.</p>
-<ul><li>🔎 <b>Answers only from your materials</b>, cited, or an honest "I don't know, want a ticket?"</li>
-<li>🆘 <b>Safety before AI:</b> crisis language gets resources instantly; dosing and sourcing requests get a fixed refusal.</li>
-<li>🪄 <b>Model chain with an honest fallback:</b> Claude when funded, then NVIDIA NIM, then a plain "engine unavailable" with the closest pages. It never makes things up.</li>
-<li>🙈 <b>Privacy by design:</b> no chat reading, no content logging, pseudonymous ticket records.</li>
-<li>☁️ <b>Nothing local:</b> serverless functions, GitHub Actions, GitHub Pages.</li></ul></div>
-<div class="card"><h2>🏳️ Flagship tenant: PIR®</h2>
-<p>The first deployment serves <a href="https://www.psychedelicsinrecovery.org">Psychedelics In Recovery™</a>,
-a 12-step fellowship, with LitCom, TechCom, GitHub, PR, and moderation desks. Next up: more fleet orgs and
-Firecrawl-powered research lanes.</p></div>
-<div class="card"><h2>📜 The alexandrine</h2>
-<p>An <i>alexandrine</i> is a twelve-syllable line of verse, which fits an engine whose flagship home walks with Twelve Steps and Twelve Traditions.
-A.L.E.X. has its own alexandrine, written for and dedicated to PIR®'s fellowship:</p>
-<p style="text-align:center"><a class="btn primary" href="https://psychedelicsinrecovery.github.io/alex-desk-public/">🌌 Read A.L.E.X.'s alexandrine at PIR® →</a></p></div>
-<div class="card"><h2>🚧 Status</h2><p>Pilot build, October 2026. The engine source is private for now; this page is its public window.</p></div>
+:root{
+  --ink:#0d0a08;--ink2:#15100c;--panel:rgba(30,22,16,.66);--panel-solid:#1b140f;--line:rgba(255,160,90,.15);--line-strong:rgba(255,160,90,.32);
+  --fg:#f6ecdf;--muted:#c2ad97;--faint:#86735f;
+  --ember:#ff6b1a;--amber:#ffb347;--flame:#ff3d00;--honey:#ffd08a;--sage:#9fd8a8;--violet:#b48cff;
+  --glow:0 0 0 1px var(--line),0 24px 70px -28px rgba(255,107,26,.5);
+  --serif:"Instrument Serif",Georgia,serif;--sans:"Space Grotesk",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+[data-theme=light]{
+  --ink:#fbf5ec;--ink2:#f4eadc;--panel:rgba(255,252,246,.8);--panel-solid:#fffaf2;--line:rgba(176,74,10,.14);--line-strong:rgba(176,74,10,.3);
+  --fg:#2a1a0e;--muted:#6f5541;--faint:#a08a74;--ember:#d4520a;--amber:#b06a00;--flame:#c22f00;--honey:#9a5b00;--sage:#2f7a3d;--violet:#6b3fd1;
+  --glow:0 0 0 1px var(--line),0 20px 50px -26px rgba(176,74,10,.35);color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--fg);font:17px/1.65 var(--sans);overflow-x:hidden;
+  background:radial-gradient(1000px 640px at 85% -10%,color-mix(in srgb,var(--ember) 22%,transparent),transparent 60%),
+             radial-gradient(800px 600px at -10% 40%,color-mix(in srgb,var(--amber) 10%,transparent),transparent 60%),var(--ink)}
+#sparks{position:fixed;inset:0;z-index:-1;pointer-events:none}
+a{color:var(--amber);text-underline-offset:3px}a:hover{color:var(--honey)}
+h1,h2,h3{margin:0 0 .5rem;line-height:1.05;font-weight:400}
+h2{font:400 clamp(2.2rem,4.6vw,3.6rem)/1.02 var(--serif);letter-spacing:-.01em}
+h3{font:600 1.12rem var(--sans)}
+code{font:500 .86em var(--mono);background:color-mix(in srgb,var(--ember) 14%,transparent);padding:.06rem .36rem;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 1.3rem}
+.eyebrow{font:600 .72rem/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--ember)}
+.muted{color:var(--muted)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--ink) 70%,transparent);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:1rem;height:62px}
+.mark{display:flex;align-items:center;gap:.6rem;font:400 1.5rem var(--serif);color:var(--fg);text-decoration:none}
+.mark i{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--honey),var(--ember) 55%,#8a2a06);box-shadow:0 0 18px color-mix(in srgb,var(--ember) 60%,transparent)}
+.top nav{margin-left:auto;display:flex;gap:.2rem}
+.top nav a{color:var(--muted);text-decoration:none;font-size:.9rem;padding:.4rem .7rem;border-radius:8px}
+.top nav a:hover{color:var(--fg);background:var(--panel)}
+.tbtn{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:8px;height:36px;width:36px;cursor:pointer}
+@media (max-width:760px){.top nav a.opt{display:none}}
+.hero{padding:6.5rem 0 4.5rem;min-height:calc(100vh - 62px);display:flex;flex-direction:column;justify-content:center}
+.hero h1{font:400 clamp(4.2rem,13vw,10.5rem)/.86 var(--serif);letter-spacing:-.03em;margin:1rem 0 1.4rem;
+  background:linear-gradient(100deg,var(--fg) 30%,var(--honey) 55%,var(--ember) 75%,var(--flame));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 em{font-style:italic}
+.acrostic{display:flex;flex-wrap:wrap;gap:.25rem .9rem;font:500 clamp(.85rem,1.4vw,1rem) var(--mono);color:var(--faint);max-width:60rem}
+.acrostic span{transition:color .4s}
+.acrostic b{color:var(--ember);font-weight:600}
+.acrostic span.lit{color:var(--fg)}
+.lede{font-size:clamp(1.1rem,1.7vw,1.32rem);max-width:40rem;margin:2rem 0 2.2rem;color:color-mix(in srgb,var(--fg) 86%,var(--muted))}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.35rem;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line-strong);color:var(--fg);background:var(--panel);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--glow);color:var(--fg)}
+.btn.primary{background:linear-gradient(120deg,var(--flame),var(--ember) 50%,var(--amber));border-color:transparent;color:#1a0d04}
+section{padding:6rem 0;scroll-margin-top:70px}
+.head{max-width:46rem;margin-bottom:2.6rem}.head p{font-size:1.08rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.5rem;backdrop-filter:blur(10px);position:relative;overflow:hidden}
+.grid{display:grid;gap:1rem}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g2{grid-template-columns:1.1fr .9fr}
+@media (max-width:960px){.g3,.g2{grid-template-columns:1fr}}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s,transform .8s}.reveal.in{opacity:1;transform:none}
+.libs{position:relative;aspect-ratio:1;max-width:520px;margin:0 auto;width:100%}
+.libs svg{width:100%;height:100%;overflow:visible}
+.core text{font:400 26px var(--serif);fill:#1a0d04;text-anchor:middle}
+.lane{stroke:var(--line-strong);stroke-width:1.2;fill:none;stroke-dasharray:3 6}
+.pulse{fill:var(--honey)}
+.tenant circle{fill:var(--panel-solid);stroke:var(--line-strong);stroke-width:1.2}
+.tenant.live circle{stroke:var(--violet);stroke-width:2}
+.tenant text{font:600 12px var(--sans);fill:var(--fg);text-anchor:middle}
+.tenant text.s{font:500 10px var(--mono);fill:var(--muted)}
+.feat .ico{font-size:1.6rem}.feat h3{margin:.7rem 0 .3rem}.feat p{margin:0;color:var(--muted);font-size:.95rem}
+.flow{display:grid;grid-template-columns:repeat(8,1fr);gap:.5rem}
+@media (max-width:960px){.flow{grid-template-columns:repeat(2,1fr)}}
+.node{padding:1rem .9rem;border-radius:14px;border:1px solid var(--line);background:var(--panel);transition:border-color .3s,box-shadow .3s,transform .3s}
+.node .n{font:600 .66rem var(--mono);color:var(--ember)}
+.node b{display:block;font-size:.95rem;margin:.35rem 0 .2rem}
+.node span{font-size:.8rem;color:var(--muted);line-height:1.4;display:block}
+.node.hot{border-color:var(--ember);box-shadow:var(--glow);transform:translateY(-3px)}
+.node.gate{border-style:dashed}
+pre{margin:0;overflow:auto;font:500 .84rem/1.7 var(--mono);color:var(--muted)}
+.code{padding:0}.code header{display:flex;gap:.45rem;align-items:center;padding:.75rem 1rem;border-bottom:1px solid var(--line);font:500 .78rem var(--mono);color:var(--faint)}
+.code header i{width:10px;height:10px;border-radius:50%;background:var(--line-strong)}.code header i:first-child{background:var(--flame)}.code header i:nth-child(2){background:var(--amber)}.code header i:nth-child(3){background:var(--sage)}
+.code pre{padding:1.1rem 1.2rem}
+.k{color:var(--amber)}.s{color:var(--sage)}.c{color:var(--faint);font-style:italic}.v{color:var(--honey)}
+.flag{display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:center;background:radial-gradient(500px 260px at 0 50%,rgba(180,140,255,.18),transparent 70%),var(--panel);border-color:rgba(180,140,255,.3)}
+@media (max-width:700px){.flag{grid-template-columns:1fr}}
+.flag img{width:200px;height:200px;border-radius:50%;box-shadow:0 0 60px rgba(111,227,255,.35),0 0 0 3px rgba(180,140,255,.4)}
+.flag h2{font-size:clamp(2rem,4vw,3rem)}
+.stat .big{font:400 clamp(2.6rem,5vw,3.6rem)/1 var(--serif);color:var(--ember)}
+.stat p{margin:.4rem 0 0;color:var(--muted);font-size:.93rem}
+.road{margin:0;padding-left:1.1rem}.road li{margin:.45rem 0}.road b{color:var(--fg)}
+footer{border-top:1px solid var(--line);padding:2.6rem 0 3rem;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between}
+footer a{color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<canvas id="sparks" aria-hidden="true"></canvas>
+<header class="top"><div class="wrap">
+  <a class="mark" href="#top"><i></i>Alexandrina</a>
+  <nav aria-label="Sections"><a href="#libraries" class="opt">Libraries</a><a href="#flow">Pipeline</a><a href="#tenant" class="opt">Tenants</a><a href="#flagship">A.L.E.X.</a><a href="#road" class="opt">Roadmap</a></nav>
+  <button class="tbtn" id="theme" aria-label="Toggle light and dark theme">◐</button>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <div class="eyebrow">drasticstatic · engine preview</div>
+  <h1>Alexandrina<em>.</em></h1>
+  <div class="acrostic" id="acro" aria-label="Astral Logic Endpoint eXpander: Automated Neural Distributed Resource Inferring Nexus Architecture">
+    <span><b>A</b>stral</span><span><b>L</b>ogic</span><span><b>E</b>ndpoint</span><span>e<b>X</b>pander:</span><span><b>A</b>utomated</span><span><b>N</b>eural</span><span><b>D</b>istributed</span><span><b>R</b>esource</span><span><b>I</b>nferring</span><span><b>N</b>exus</span><span><b>A</b>rchitecture</span>
+  </div>
+  <p class="lede">A small, careful knowledge engine for communities. Point it at your own materials, and members get <b>answers in your own words, with the page they came from</b>, plus helpdesks that turn requests into tracked work. When it doesn't know, it says so.</p>
+  <div class="cta"><a class="btn primary" href="#flagship">🌌 Meet A.L.E.X., the flagship</a><a class="btn" href="#flow">Follow the pipeline →</a></div>
+</div>
+
+<section id="libraries"><div class="wrap grid g2" style="align-items:center">
+  <div class="reveal"><div class="eyebrow">One engine, many libraries</div><h2>Every community keeps its own shelf</h2>
+    <p class="muted">Each community is a <b>tenant</b>: its own sources, voice, crisis text, desks and visibility rules. The engine never mixes shelves, and committee-only drafts never leave committee. That's enforced in code, with tests that try to leak them.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:1.5rem">
+      <div class="card feat"><div class="ico">🔎</div><h3>Sourced or silent</h3><p>Answers cite their pages. No match means an honest “not in our materials.”</p></div>
+      <div class="card feat"><div class="ico">🆘</div><h3>Safety before AI</h3><p>Crisis, dosing and sourcing are caught by plain rules before any model runs.</p></div>
+      <div class="card feat"><div class="ico">🪄</div><h3>An honest model chain</h3><p>Claude when funded, then NVIDIA NIM. If all fail: “unavailable”, the closest pages and a ticket.</p></div>
+      <div class="card feat"><div class="ico">🙈</div><h3>Private by design</h3><p>No content logging. Ticket requesters are stored as a keyed hash, never an ID.</p></div>
+    </div></div>
+  <div class="libs reveal" aria-hidden="true">
+    <svg viewBox="0 0 400 400">
+      <defs><radialGradient id="coreg"><stop offset="0" stop-color="#ffe2b0"/><stop offset=".55" stop-color="#ff6b1a"/><stop offset="1" stop-color="#9a2f06"/></radialGradient></defs>
+      <path class="lane" id="l1" d="M200 200 L200 50"/><path class="lane" id="l2" d="M200 200 L342 154"/><path class="lane" id="l3" d="M200 200 L288 322"/><path class="lane" id="l4" d="M200 200 L112 322"/><path class="lane" id="l5" d="M200 200 L58 154"/>
+      <circle class="pulse" r="3.5"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#l1"/></animateMotion></circle>
+      <circle class="pulse" r="3"><animateMotion dur="4.1s" begin="1s" repeatCount="indefinite"><mpath href="#l3"/></animateMotion></circle>
+      <circle class="pulse" r="3"><animateMotion dur="3.7s" begin=".5s" repeatCount="indefinite"><mpath href="#l5"/></animateMotion></circle>
+      <g class="core"><circle cx="200" cy="200" r="58" fill="url(#coreg)"/><text x="200" y="208">engine</text></g>
+      <g class="tenant live"><circle cx="200" cy="50" r="40"/><text x="200" y="47">PIR®</text><text class="s" x="200" y="63">live</text></g>
+      <g class="tenant"><circle cx="342" cy="154" r="36"/><text x="342" y="151">O-R-G</text><text class="s" x="342" y="167">next</text></g>
+      <g class="tenant"><circle cx="288" cy="322" r="36"/><text x="288" y="319">THEF</text><text class="s" x="288" y="335">someday</text></g>
+      <g class="tenant"><circle cx="112" cy="322" r="36"/><text x="112" y="319">research</text><text class="s" x="112" y="335">lane</text></g>
+      <g class="tenant"><circle cx="58" cy="154" r="36"/><text x="58" y="151">yours?</text><text class="s" x="58" y="167">tenant</text></g>
+    </svg>
+  </div>
+</div></section>
+
+<section id="flow"><div class="wrap">
+  <div class="head reveal"><div class="eyebrow">The pipeline</div><h2>Eight steps, three honest exits</h2>
+  <p class="muted">Every question walks the same path. The dashed gates are where it may stop on purpose: for safety, for lack of evidence, or because every model is down.</p></div>
+  <div class="flow">
+    <div class="node"><div class="n">01</div><b>Question</b><span>trimmed, length-checked</span></div>
+    <div class="node gate"><div class="n">02 · gate</div><b>Safety guard</b><span>crisis → resources · dosing → refusal</span></div>
+    <div class="node"><div class="n">03</div><b>Visibility</b><span>public surfaces search public shelves</span></div>
+    <div class="node"><div class="n">04</div><b>Two searches</b><span>BM25 keywords + embeddings</span></div>
+    <div class="node"><div class="n">05</div><b>Fusion</b><span>reciprocal rank, k = 60</span></div>
+    <div class="node gate"><div class="n">06 · gate</div><b>Confidence</b><span>none → “not in our materials”</span></div>
+    <div class="node gate"><div class="n">07 · gate</div><b>Model chain</b><span>Claude → NIM → … · 15 s each</span></div>
+    <div class="node"><div class="n">08</div><b>Cited answer</b><span>or honest unavailable + ticket</span></div>
+  </div>
+</div></section>
+
+<section id="tenant"><div class="wrap grid g2" style="align-items:start">
+  <div class="card code reveal"><header><i></i><i></i><i></i>&nbsp;tenants/your-community/tenant.yaml</header>
+<pre><span class="k">id</span>: <span class="v">your-community</span>
+<span class="k">name</span>: <span class="s">Your Fellowship</span>
+<span class="k">persona</span>: { <span class="k">name</span>: <span class="s">A.L.E.X.</span>, <span class="k">file</span>: <span class="s">persona.md</span> }
+<span class="k">sources</span>:
+  - { <span class="k">id</span>: <span class="v">site</span>,      <span class="k">type</span>: <span class="s">markdown-dir</span>, <span class="k">visibility</span>: <span class="v">public</span> }
+  - { <span class="k">id</span>: <span class="v">committee</span>, <span class="k">type</span>: <span class="s">markdown-dir</span>, <span class="k">visibility</span>: <span class="v">committee</span> }
+<span class="k">crisis</span>:  { <span class="k">file</span>: <span class="s">crisis.md</span> }    <span class="c"># shown verbatim, no AI</span>
+<span class="k">refusal</span>: { <span class="k">file</span>: <span class="s">refusal.md</span> }
+<span class="k">retrieval</span>: { <span class="k">topK</span>: <span class="v">6</span>, <span class="k">minScore</span>: <span class="v">4</span> }
+<span class="k">desks</span>:
+  - <span class="k">id</span>: <span class="v">techcom</span>
+    <span class="k">command</span>: <span class="s">techcom</span>              <span class="c"># → /techcom</span>
+    <span class="k">prefix</span>: <span class="s">TECH</span>                  <span class="c"># → TECH-12</span>
+    <span class="k">githubRepo</span>: <span class="s">your-org/techcom-desk</span></pre></div>
+  <div class="reveal"><div class="eyebrow">Configuration, not code</div><h2>A new community is a folder</h2>
+    <p class="muted">Persona, sources, crisis text, retrieval thresholds and helpdesks live in one YAML file beside the community's own Markdown and PDFs. Deployments snapshot the engine instead of forking its history, so private origins stay private.</p>
+    <div class="grid g3" style="margin-top:1.6rem">
+      <div class="card stat"><div class="big">700</div><p>lines of core engine</p></div>
+      <div class="card stat"><div class="big">66</div><p>tests passing</p></div>
+      <div class="card stat"><div class="big">0</div><p>invented answers, by design</p></div>
+    </div></div>
+</div></section>
+
+<section id="flagship"><div class="wrap">
+  <div class="card flag reveal">
+    <img src="https://psychedelicsinrecovery.github.io/alex-desk-public/assets/alex-portrait.jpg" alt="A.L.E.X., Astral Logic Endpoint eXpander, PIR®'s Discord helper" width="200" height="200">
+    <div><div class="eyebrow" style="color:var(--violet)">Flagship tenant · PIR® Psychedelics In Recovery™</div>
+      <h2>A.L.E.X. is live</h2>
+      <p class="muted">The first deployment serves PIR®, a twelve-step fellowship, in Discord. <code>/ask</code> answers from PIR's own pages and literature, and the LitCom, TechCom, GitHub, PR and moderation desks open private, tracked tickets. An <i>alexandrine</i> is a twelve-syllable line, which suits a home that walks with Twelve Steps and Twelve Traditions, and A.L.E.X. has one of her own.</p>
+      <div class="cta" style="margin-top:1.2rem"><a class="btn" href="https://psychedelicsinrecovery.github.io/alex-desk-public/" style="border-color:rgba(180,140,255,.45)">🌌 Visit A.L.E.X. at PIR® →</a><a class="btn" href="https://psychedelicsinrecovery.github.io/alex-desk-public/#poem">📜 Her alexandrine</a></div></div>
+  </div>
+</div></section>
+
+<section id="road"><div class="wrap grid g2" style="align-items:start">
+  <div class="reveal"><div class="eyebrow">Roadmap</div><h2>Where it's headed</h2>
+    <p class="muted">Pilot build, October 2026. The engine source is private for now; this page is its public window.</p></div>
+  <div class="card reveal"><ul class="road">
+    <li>✅ <b>Discord surface</b>: slash commands, a chat panel, private ticket threads, archive and reopen</li>
+    <li>✅ <b>Helpdesks → GitHub</b>: problems become Issues, ideas become Discussions</li>
+    <li>🔜 <b>FAQ answer cache</b>: instant replies that survive model outages</li>
+    <li>🔜 <b>Citations that land on the sentence</b>: text-fragment links</li>
+    <li>🔜 <b>Web portals</b> with password-free magic-link sign-in</li>
+    <li>🧪 <b>Research lanes</b> via Firecrawl, kept apart from community shelves</li>
+    <li>🧪 <b>More tenants</b>: O-R-G next, with its community's blessing</li>
+  </ul></div>
+</div></section>
 </main>
-<footer>🌌 Alexandrina · built with 👾 Claude Code CLI by <a href="https://github.com/drasticstatic">drasticstatic</a> · <a href="https://psychedelicsinrecovery.github.io">PIR® hub</a></footer>
-</body></html>
+
+<footer><div class="wrap">
+  <span><b style="color:var(--fg)">Alexandrina</b> · built with 👾 Claude Code CLI by <a href="https://github.com/drasticstatic">drasticstatic</a></span>
+  <span><a href="https://psychedelicsinrecovery.github.io/alex-desk-public/">A.L.E.X. at PIR®</a> · <a href="https://psychedelicsinrecovery.github.io">PIR® hub</a> · <a href="https://psychedelicsinrecovery.github.io/changelog-astro-public/library/how-alex-works">How A.L.E.X. works</a></span>
+</div></footer>
+
+<script>
+(function(){
+var root=document.documentElement,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.getElementById('theme').onclick=function(){root.dataset.theme=root.dataset.theme==='light'?'dark':'light';try{localStorage.setItem('alexandrina-theme',root.dataset.theme)}catch(e){}};
+/* rising embers that part around the pointer */
+var c=document.getElementById('sparks'),x=c.getContext('2d'),W,H,dpr=Math.min(devicePixelRatio||1,2),P=[],mx=-1e4,my=-1e4;
+function spark(any){return{x:Math.random()*W,y:any?Math.random()*H:H+10,vy:-(.15+Math.random()*.55)*dpr,sw:Math.random()*6.28,r:(Math.random()*1.6+.4)*dpr,h:Math.random()}}
+function size(){W=c.width=innerWidth*dpr;H=c.height=innerHeight*dpr;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';P=[];var n=Math.min(160,Math.round(innerWidth*innerHeight/11000));for(var i=0;i<n;i++)P.push(spark(true))}
+addEventListener('pointermove',function(e){mx=e.clientX*dpr;my=e.clientY*dpr},{passive:true});
+function draw(t){x.clearRect(0,0,W,H);var light=root.dataset.theme==='light';x.globalCompositeOperation=light?'source-over':'lighter';
+ for(var i=0;i<P.length;i++){var p=P[i];if(!reduce){p.y+=p.vy;p.x+=Math.sin(t*.0012+p.sw)*.25*dpr;var d=Math.hypot(p.x-mx,p.y-my);if(d<120*dpr&&d>0){p.x+=(p.x-mx)/d*1.2;p.y+=(p.y-my)/d*1.2}}
+  if(p.y<-10)P[i]=spark(false);var a=Math.min(1,(H-p.y)/H*1.4)*(.4+.6*Math.abs(Math.sin(t*.002+p.sw)));
+  var col=p.h<.6?'255,140,60':(p.h<.85?'255,200,120':'255,90,30');var g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*4);
+  g.addColorStop(0,'rgba('+col+','+(light?a*.5:a)+')');g.addColorStop(1,'rgba('+col+',0)');x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.r*4,0,6.283);x.fill()}
+ if(!reduce&&!document.hidden)requestAnimationFrame(draw)}
+size();addEventListener('resize',size);requestAnimationFrame(draw);
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&!reduce)requestAnimationFrame(draw)});
+document.querySelectorAll('#acro span').forEach(function(w,i){setTimeout(function(){w.classList.add('lit')},reduce?0:300+i*140)});
+if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)})}else document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+var nodes=document.querySelectorAll('.node'),k=0;if(!reduce)setInterval(function(){nodes.forEach(function(n){n.classList.remove('hot')});nodes[k%nodes.length].classList.add('hot');k++},900);
+})();
+</script>
+</body>
+</html>
