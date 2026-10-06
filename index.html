@@ -7,10 +7,11 @@
 <meta name="theme-color" content="#0d0a08">
 <meta property="og:title" content="Alexandrina · the engine behind A.L.E.X.">
 <meta property="og:description" content="Sourced answers, safety before AI, and helpdesks that never lose a request. PIR® is the flagship community.">
-<meta property="og:image" content="https://psychedelicsinrecovery.github.io/alex-desk-public/assets/alex-social.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop offset='0' stop-color='%23ffd08a'/%3E%3Cstop offset='.55' stop-color='%23ff6b1a'/%3E%3Cstop offset='1' stop-color='%23b8320a'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Cpath d='M32 14 46 50H39l-3-9H28l-3 9h-7z M30 35h4l-2-7z' fill='%230d0a08'/%3E%3C/svg%3E">
+<meta property="og:image" content="https://drasticstatic.github.io/alexandrina-public-preview/assets/social.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="628"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://drasticstatic.github.io/alexandrina-public-preview/assets/social.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"><link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop offset='0' stop-color='%23ffd08a'/%3E%3Cstop offset='.55' stop-color='%23ff6b1a'/%3E%3Cstop offset='1' stop-color='%23b8320a'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Cpath d='M32 14 46 50H39l-3-9H28l-3 9h-7z M30 35h4l-2-7z' fill='%230d0a08'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css">
 <script>try{var t=localStorage.getItem('alexandrina-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
 <style>
 :root{
@@ -102,36 +103,58 @@ pre{margin:0;overflow:auto;font:500 .84rem/1.7 var(--mono);color:var(--muted)}
 footer{border-top:1px solid var(--line);padding:2.6rem 0 3rem;color:var(--muted);font-size:.9rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between}
 footer a{color:var(--muted)}
+
+.ph-fill{line-height:1;vertical-align:-.12em}
+.btn .ph-fill{font-size:1.15em}.tbtn .ph-fill{font-size:1.05rem}
+.feat .ico .ph-fill{font-size:1.8rem;background:linear-gradient(135deg,var(--honey),var(--ember) 55%,var(--flame));-webkit-background-clip:text;background-clip:text;color:transparent}
+.mark img{width:28px;height:28px;border-radius:50%;box-shadow:0 0 16px color-mix(in srgb,var(--ember) 55%,transparent)}
+.road.plain{list-style:none;padding:0}.road .ph-fill{margin-right:.45rem;font-size:1.1em}.road .done{color:var(--sage)}.road .soon{color:var(--amber)}.road .lab{color:var(--violet)}
+footer .ph-fill{color:var(--ember)}
+.hero-shell{position:relative;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1;background:url(assets/hero.webp) right center/cover no-repeat;opacity:.75;-webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent);mask-image:linear-gradient(to bottom,#000 60%,transparent)}
+[data-theme=light] .hero-bg{opacity:.32;filter:saturate(1.2)}
+.hero{position:relative}
+.hero .avatar{position:absolute;right:-3%;top:52%;transform:translateY(-50%);width:min(320px,24vw);height:auto;border-radius:50%;box-shadow:0 0 90px rgba(255,107,26,.45),0 0 0 1px var(--line-strong);animation:float 9s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(calc(-50% - 10px))}}
+@media (min-width:1001px){.hero .acrostic,.hero .lede{max-width:min(40rem,60%)}.hero h1{max-width:70%}}
+@media (max-width:1000px){.hero .avatar{position:static;transform:none;width:200px;margin-top:2.5rem;animation:none}}
+:root:not([data-theme=light]) .hero .lede{text-shadow:0 1px 14px rgba(13,10,8,.95)}
+.painted{position:relative;isolation:isolate}
+.painted::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--bg) center/cover no-repeat;opacity:.22;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 25%,#000 75%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 25%,#000 75%,transparent)}
+[data-theme=light] .painted::before{opacity:.12}
+.flag{isolation:isolate}
+.flag-bg{position:absolute;inset:0;z-index:-1;background:url(assets/split.webp) center/cover no-repeat;opacity:.35;-webkit-mask-image:linear-gradient(to right,transparent,#000 40%);mask-image:linear-gradient(to right,transparent,#000 40%)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <canvas id="sparks" aria-hidden="true"></canvas>
 <header class="top"><div class="wrap">
-  <a class="mark" href="#top"><i></i>Alexandrina</a>
+  <a class="mark" href="#top"><img src="assets/favicon-64.png" alt="" width="28" height="28">Alexandrina</a>
   <nav aria-label="Sections"><a href="#libraries" class="opt">Libraries</a><a href="#flow">Pipeline</a><a href="#tenant" class="opt">Tenants</a><a href="#flagship">A.L.E.X.</a><a href="#road" class="opt">Roadmap</a></nav>
-  <button class="tbtn" id="theme" aria-label="Toggle light and dark theme">◐</button>
+  <button class="tbtn" id="theme" aria-label="Toggle light and dark theme"><i class="ph-fill ph-circle-half" aria-hidden="true"></i></button>
 </div></header>
 
 <main id="top">
-<div class="wrap hero">
+<div class="hero-shell"><div class="hero-bg" aria-hidden="true"></div><div class="wrap hero">
   <div class="eyebrow">drasticstatic · engine preview</div>
   <h1>Alexandrina<em>.</em></h1>
   <div class="acrostic" id="acro" aria-label="Astral Logic Endpoint eXpander: Automated Neural Distributed Resource Inferring Nexus Architecture">
     <span><b>A</b>stral</span><span><b>L</b>ogic</span><span><b>E</b>ndpoint</span><span>e<b>X</b>pander:</span><span><b>A</b>utomated</span><span><b>N</b>eural</span><span><b>D</b>istributed</span><span><b>R</b>esource</span><span><b>I</b>nferring</span><span><b>N</b>exus</span><span><b>A</b>rchitecture</span>
   </div>
   <p class="lede">A small, careful knowledge engine for communities. Point it at your own materials, and members get <b>answers in your own words, with the page they came from</b>, plus helpdesks that turn requests into tracked work. When it doesn't know, it says so.</p>
-  <div class="cta"><a class="btn primary" href="#flagship">🌌 Meet A.L.E.X., the flagship</a><a class="btn" href="#flow">Follow the pipeline →</a></div>
-</div>
+  <div class="cta"><a class="btn primary" href="#flagship"><i class="ph-fill ph-planet" aria-hidden="true"></i> Meet A.L.E.X., the flagship</a><a class="btn" href="#flow">Follow the pipeline →</a></div>
+  <img class="avatar" src="assets/avatar.webp" alt="Alexandrina: a portrait woven from ember light" width="640" height="640">
+</div></div>
 
-<section id="libraries"><div class="wrap grid g2" style="align-items:center">
+<section id="libraries" class="painted" style="--bg:url(assets/library.webp)"><div class="wrap grid g2" style="align-items:center">
   <div class="reveal"><div class="eyebrow">One engine, many libraries</div><h2>Every community keeps its own shelf</h2>
     <p class="muted">Each community is a <b>tenant</b>: its own sources, voice, crisis text, desks and visibility rules. The engine never mixes shelves, and committee-only drafts never leave committee. That's enforced in code, with tests that try to leak them.</p>
     <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:1.5rem">
-      <div class="card feat"><div class="ico">🔎</div><h3>Sourced or silent</h3><p>Answers cite their pages. No match means an honest “not in our materials.”</p></div>
-      <div class="card feat"><div class="ico">🆘</div><h3>Safety before AI</h3><p>Crisis, dosing and sourcing are caught by plain rules before any model runs.</p></div>
-      <div class="card feat"><div class="ico">🪄</div><h3>An honest model chain</h3><p>Claude when funded, then NVIDIA NIM. If all fail: “unavailable”, the closest pages and a ticket.</p></div>
-      <div class="card feat"><div class="ico">🙈</div><h3>Private by design</h3><p>No content logging. Ticket requesters are stored as a keyed hash, never an ID.</p></div>
+      <div class="card feat"><div class="ico"><i class="ph-fill ph-magnifying-glass" aria-hidden="true"></i></div><h3>Sourced or silent</h3><p>Answers cite their pages. No match means an honest “not in our materials.”</p></div>
+      <div class="card feat"><div class="ico"><i class="ph-fill ph-lifebuoy" aria-hidden="true"></i></div><h3>Safety before AI</h3><p>Crisis, dosing and sourcing are caught by plain rules before any model runs.</p></div>
+      <div class="card feat"><div class="ico"><i class="ph-fill ph-magic-wand" aria-hidden="true"></i></div><h3>An honest model chain</h3><p>Claude when funded, then NVIDIA NIM. If all fail: “unavailable”, the closest pages and a ticket.</p></div>
+      <div class="card feat"><div class="ico"><i class="ph-fill ph-eye-slash" aria-hidden="true"></i></div><h3>Private by design</h3><p>No content logging. Ticket requesters are stored as a keyed hash, never an ID.</p></div>
     </div></div>
   <div class="libs reveal" aria-hidden="true">
     <svg viewBox="0 0 400 400">
@@ -150,7 +173,7 @@ footer a{color:var(--muted)}
   </div>
 </div></section>
 
-<section id="flow"><div class="wrap">
+<section id="flow" class="painted" style="--bg:url(assets/servers.webp)"><div class="wrap">
   <div class="head reveal"><div class="eyebrow">The pipeline</div><h2>Eight steps, three honest exits</h2>
   <p class="muted">Every question walks the same path. The dashed gates are where it may stop on purpose: for safety, for lack of evidence, or because every model is down.</p></div>
   <div class="flow">
@@ -165,7 +188,7 @@ footer a{color:var(--muted)}
   </div>
 </div></section>
 
-<section id="tenant"><div class="wrap grid g2" style="align-items:start">
+<section id="tenant" class="painted" style="--bg:url(assets/forge.webp)"><div class="wrap grid g2" style="align-items:start">
   <div class="card code reveal"><header><i></i><i></i><i></i>&nbsp;tenants/your-community/tenant.yaml</header>
 <pre><span class="k">id</span>: <span class="v">your-community</span>
 <span class="k">name</span>: <span class="s">Your Fellowship</span>
@@ -191,32 +214,32 @@ footer a{color:var(--muted)}
 </div></section>
 
 <section id="flagship"><div class="wrap">
-  <div class="card flag reveal">
+  <div class="card flag reveal"><div class="flag-bg" aria-hidden="true"></div>
     <img src="https://psychedelicsinrecovery.github.io/alex-desk-public/assets/alex-portrait.jpg" alt="A.L.E.X., Astral Logic Endpoint eXpander, PIR®'s Discord helper" width="200" height="200">
     <div><div class="eyebrow" style="color:var(--violet)">Flagship tenant · PIR® Psychedelics In Recovery™</div>
       <h2>A.L.E.X. is live</h2>
       <p class="muted">The first deployment serves PIR®, a twelve-step fellowship, in Discord. <code>/ask</code> answers from PIR's own pages and literature, and the LitCom, TechCom, GitHub, PR and moderation desks open private, tracked tickets. An <i>alexandrine</i> is a twelve-syllable line, which suits a home that walks with Twelve Steps and Twelve Traditions, and A.L.E.X. has one of her own.</p>
-      <div class="cta" style="margin-top:1.2rem"><a class="btn" href="https://psychedelicsinrecovery.github.io/alex-desk-public/" style="border-color:rgba(180,140,255,.45)">🌌 Visit A.L.E.X. at PIR® →</a><a class="btn" href="https://psychedelicsinrecovery.github.io/alex-desk-public/#poem">📜 Her alexandrine</a></div></div>
+      <div class="cta" style="margin-top:1.2rem"><a class="btn" href="https://psychedelicsinrecovery.github.io/alex-desk-public/" style="border-color:rgba(180,140,255,.45)"><i class="ph-fill ph-planet" aria-hidden="true"></i> Visit A.L.E.X. at PIR® →</a><a class="btn" href="https://psychedelicsinrecovery.github.io/alex-desk-public/#poem"><i class="ph-fill ph-scroll" aria-hidden="true"></i> Her alexandrine</a></div></div>
   </div>
 </div></section>
 
 <section id="road"><div class="wrap grid g2" style="align-items:start">
   <div class="reveal"><div class="eyebrow">Roadmap</div><h2>Where it's headed</h2>
     <p class="muted">Pilot build, October 2026. The engine source is private for now; this page is its public window.</p></div>
-  <div class="card reveal"><ul class="road">
-    <li>✅ <b>Discord surface</b>: slash commands, a chat panel, private ticket threads, archive and reopen</li>
-    <li>✅ <b>Helpdesks → GitHub</b>: problems become Issues, ideas become Discussions</li>
-    <li>🔜 <b>FAQ answer cache</b>: instant replies that survive model outages</li>
-    <li>🔜 <b>Citations that land on the sentence</b>: text-fragment links</li>
-    <li>🔜 <b>Web portals</b> with password-free magic-link sign-in</li>
-    <li>🧪 <b>Research lanes</b> via Firecrawl, kept apart from community shelves</li>
-    <li>🧪 <b>More tenants</b>: O-R-G next, with its community's blessing</li>
+  <div class="card reveal"><ul class="road plain">
+    <li><i class="ph-fill ph-check-circle done" aria-hidden="true"></i> <b>Discord surface</b>: slash commands, a chat panel, private ticket threads, archive and reopen</li>
+    <li><i class="ph-fill ph-check-circle done" aria-hidden="true"></i> <b>Helpdesks → GitHub</b>: problems become Issues, ideas become Discussions</li>
+    <li><i class="ph-fill ph-hourglass-medium soon" aria-hidden="true"></i> <b>FAQ answer cache</b>: instant replies that survive model outages</li>
+    <li><i class="ph-fill ph-hourglass-medium soon" aria-hidden="true"></i> <b>Citations that land on the sentence</b>: text-fragment links</li>
+    <li><i class="ph-fill ph-hourglass-medium soon" aria-hidden="true"></i> <b>Web portals</b> with password-free magic-link sign-in</li>
+    <li><i class="ph-fill ph-flask lab" aria-hidden="true"></i> <b>Research lanes</b> via Firecrawl, kept apart from community shelves</li>
+    <li><i class="ph-fill ph-flask lab" aria-hidden="true"></i> <b>More tenants</b>: O-R-G next, with its community's blessing</li>
   </ul></div>
 </div></section>
 </main>
 
 <footer><div class="wrap">
-  <span><b style="color:var(--fg)">Alexandrina</b> · built with 👾 Claude Code CLI by <a href="https://github.com/drasticstatic">drasticstatic</a></span>
+  <span><b style="color:var(--fg)">Alexandrina</b> · built with <i class="ph-fill ph-terminal-window" aria-hidden="true"></i> Claude Code CLI by <a href="https://github.com/drasticstatic">drasticstatic</a></span>
   <span><a href="https://psychedelicsinrecovery.github.io/alex-desk-public/">A.L.E.X. at PIR®</a> · <a href="https://psychedelicsinrecovery.github.io">PIR® hub</a> · <a href="https://psychedelicsinrecovery.github.io/changelog-astro-public/library/how-alex-works">How A.L.E.X. works</a></span>
 </div></footer>
 
