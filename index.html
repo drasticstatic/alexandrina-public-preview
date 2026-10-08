@@ -125,6 +125,19 @@ footer .ph-fill{color:var(--ember)}
 .flag{isolation:isolate}
 .flag-bg{position:absolute;inset:0;z-index:-1;background:url(assets/split.webp) center/cover no-repeat;opacity:.35;-webkit-mask-image:linear-gradient(to right,transparent,#000 40%);mask-image:linear-gradient(to right,transparent,#000 40%)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Oracle teaser */
+.oracle-teaser{padding-top:0}
+.oracle-card{display:grid;grid-template-columns:auto 1fr auto;gap:1.4rem;align-items:center;padding:1.6rem 1.8rem;border-radius:22px;text-decoration:none;color:var(--fg);
+  border:1px solid var(--line);background:linear-gradient(120deg,rgba(13,10,8,.88),rgba(13,10,8,.55)),url(assets/oracle.webp) center 20%/cover;box-shadow:0 0 60px rgba(255,107,26,.12)}
+.oracle-card:hover{border-color:var(--amber);box-shadow:0 0 80px rgba(255,107,26,.28)}
+.oracle-card,.oracle-card b{color:#f6ecdf}.oracle-card .muted{color:#d8c4ac}
+.oracle-copy{display:flex;flex-direction:column;gap:.25rem}.oracle-copy b{font:400 1.9rem/1.1 "Instrument Serif",serif}
+.oracle-orb{width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#fff3d6,var(--amber) 35%,var(--ember) 60%,transparent 72%);box-shadow:0 0 40px var(--ember);animation:orbpulse 5s ease-in-out infinite}
+@keyframes orbpulse{50%{transform:scale(1.08);box-shadow:0 0 70px var(--ember)}}
+@media (max-width:700px){.oracle-card{grid-template-columns:1fr;text-align:center}.oracle-orb{margin:0 auto}}
+@media (prefers-reduced-motion:reduce){.oracle-orb{animation:none}}
+footer a .ph-fill{opacity:.8;margin-right:.2rem}
 </style>
 </head>
 <body>
@@ -231,16 +244,26 @@ footer .ph-fill{color:var(--ember)}
     <li><i class="ph-fill ph-check-circle done" aria-hidden="true"></i> <b>Helpdesks → GitHub</b>: problems become Issues, ideas become Discussions</li>
     <li><i class="ph-fill ph-hourglass-medium soon" aria-hidden="true"></i> <b>FAQ answer cache</b>: instant replies that survive model outages</li>
     <li><i class="ph-fill ph-hourglass-medium soon" aria-hidden="true"></i> <b>Citations that land on the sentence</b>: text-fragment links</li>
-    <li><i class="ph-fill ph-hourglass-medium soon" aria-hidden="true"></i> <b>Web portals</b> with password-free magic-link sign-in</li>
+    <li><i class="ph-fill ph-check-circle done" aria-hidden="true"></i> <b>Web portals</b> with password-free magic-link sign-in</li>
     <li><i class="ph-fill ph-flask lab" aria-hidden="true"></i> <b>Research lanes</b> via Firecrawl, kept apart from community shelves</li>
     <li><i class="ph-fill ph-flask lab" aria-hidden="true"></i> <b>More tenants</b>: O-R-G next, with its community's blessing</li>
   </ul></div>
+</div></section>
+
+<section id="oracle-teaser" class="oracle-teaser"><div class="wrap">
+  <a class="oracle-card reveal" href="oracle.html">
+    <span class="oracle-orb" aria-hidden="true"></span>
+    <span class="oracle-copy"><span class="eyebrow">The Oracle</span>
+      <b>Lost in the library?</b>
+      <span class="muted">Down the rabbit hole, past the last shelf, she's waiting. Ask her where you meant to go.</span></span>
+    <span class="btn primary"><i class="ph-fill ph-eye" aria-hidden="true"></i> Consult the Oracle</span>
+  </a>
 </div></section>
 </main>
 
 <footer><div class="wrap">
   <span><b style="color:var(--fg)">Alexandrina</b> · built with <i class="ph-fill ph-terminal-window" aria-hidden="true"></i> Claude Code CLI by <a href="https://github.com/drasticstatic">drasticstatic</a></span>
-  <span><a href="https://psychedelicsinrecovery.github.io/alex-desk-public/">A.L.E.X. at PIR®</a> · <a href="https://psychedelicsinrecovery.github.io">PIR® hub</a> · <a href="https://psychedelicsinrecovery.github.io/changelog-astro-public/library/how-alex-works">How A.L.E.X. works</a></span>
+  <span><a href="https://psychedelicsinrecovery.github.io/alex-desk-public/"><i class="ph-fill ph-planet" aria-hidden="true"></i> A.L.E.X. at PIR®</a> · <a href="https://psychedelicsinrecovery.github.io"><i class="ph-fill ph-house" aria-hidden="true"></i> PIR® hub</a> · <a href="https://psychedelicsinrecovery.github.io/changelog-astro-public/library/how-alex-works"><i class="ph-fill ph-book-open-text" aria-hidden="true"></i> How A.L.E.X. works</a> · <a href="oracle.html"><i class="ph-fill ph-eye" aria-hidden="true"></i> The Oracle</a> · <a href="https://psychedelicsinrecovery.github.io/alex-desk-public/roadmap.html"><i class="ph-fill ph-path" aria-hidden="true"></i> Roadmap</a></span>
 </div></footer>
 
 <script>
